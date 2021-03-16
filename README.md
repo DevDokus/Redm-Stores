@@ -3,6 +3,9 @@
  
 **Latest Version = 0.1.0**
  
+# Requirements
+[DevDokus RedM UsableItems](https://github.com/DevDokus/RedM-UsableItems)
+
 # Framework
 Currently this script only works with VORP. <br> 
 In the near future this script will also be <br> 
