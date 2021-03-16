@@ -1,7 +1,5 @@
-# RedM-Stores (WIP)
+# RedM-Stores (WIP) (v0.1.0)
  Customizable Stores for RedM
- 
-**Version 0.1.0**
  
 # Framework
 Currently this script only works with VORP. <br> 
