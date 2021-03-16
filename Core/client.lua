@@ -6,6 +6,7 @@ function Wait(args) Citizen.Wait(args) end
 -- Varables
 local InRange = false
 local ActiveMenu = nil
+local MenuOpen = false
 --------------------------------------------------------------------------------
 -- Core
 --------------------------------------------------------------------------------
@@ -32,14 +33,15 @@ Citizen.CreateThread(function()
       if (dist <= 5) then
         DrawCircle(x,y,z, 204, 56, 209, 50)
         if (dist <= 1.5) then
+          if not MenuOpen then DrawTxt('Press [ SPACE ] to open the shop menu', 0.50, 0.90, 0.7, 0.5, true, 255, 255, 255, 255, true) end
           if IsControlJustPressed(0, Keys["Space"]) then
-            -- Open the menu
+            MenuOpen = true
             ActiveMenu = 'Home'
             WarMenu.OpenMenu('Home')
           end
 
           if IsControlJustPressed(0, Keys['Backspace']) then
-            if     ActiveMenu == 'Home'       then WarMenu.CloseMenu()          ActiveMenu = nil
+            if     ActiveMenu == 'Home'       then WarMenu.CloseMenu()          ActiveMenu = nil MenuOpen = false
             elseif ActiveMenu == 'BuyMenu'    then WarMenu.OpenMenu('Home')     ActiveMenu = 'Home'
             elseif ActiveMenu == 'SellMenu'   then WarMenu.OpenMenu('Home')     ActiveMenu = 'Home'
             elseif ActiveMenu == 'bFoodCat'   then WarMenu.OpenMenu('BuyMenu')  ActiveMenu = 'BuyMenu'
@@ -75,10 +77,10 @@ function CreateMenus()
   WarMenu.SetSubTitle('BuyMenu', 'Choose Category')
 
   WarMenu.CreateMenu('bFoodCat', 'General Store')
-  WarMenu.SetSubTitle('bFoodCat', 'Choose Category')
+  WarMenu.SetSubTitle('bFoodCat', 'Ah, hungry I see?')
 
   WarMenu.CreateMenu('bMiscCat', 'General Store')
-  WarMenu.SetSubTitle('bMiscCat', 'Choose Category')
+  WarMenu.SetSubTitle('bMiscCat', 'Other items')
 end
 
 --------------------------------------------------------------------------------
@@ -133,6 +135,15 @@ function bMiscCat()
   WarMenu.Display()
 end
 
+function DrawTxt(str, x, y, w, h, enableShadow, col1, col2, col3, a, center)
+   local str = CreateVarString(10, "LITERAL_STRING", str, Citizen.ResultAsLong())
+   SetTextScale(w, h)
+   SetTextColor(math.floor(col1), math.floor(col2), math.floor(col3), math.floor(a))
+   SetTextCentre(center)
+   if enableShadow then SetTextDropshadow(1, 0, 0, 0, 255) end
+   Citizen.InvokeNative(0xADA9255D, 10);
+   DisplayText(str, x, y)
+end
 
 
 
