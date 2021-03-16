@@ -1,5 +1,8 @@
 # RedM-Stores (WIP) (v0.1.0)
  Customizable Stores for RedM
+
+# Requirements
+[DevDokus RedM UsableItems](https://github.com/DevDokus/RedM-UsableItems)
  
 # Framework
 Currently this script only works with VORP. <br> 
