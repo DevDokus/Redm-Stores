@@ -1,4 +1,4 @@
-# RedM-Stores (WIP)
+# RedM-Stores (WIP) (Latest Version)
  Customizable Stores for RedM
  
 **Latest Version = 0.1.0**
