@@ -8,7 +8,7 @@ games {"rdr3"}
 
 description 'Customizable General Stores for RedM'
 author 'DevDokus Github'
-version '0.0.1'
+version '0.1.0'
 
 client_scripts {
     'Lib/warmenu.lua',
