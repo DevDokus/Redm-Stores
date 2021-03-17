@@ -13,7 +13,8 @@ In the near future this script will also be <br>
 compatible with RedEmRP. 
 
 # Features
-- Currently you can only buy items from the category Food and Misc items. <br>
+- Buying items from 3 categories (Food - Meds - Misc) <br>
+- Selling items from 3 categories (Food - Meds - Misc) <br>
 - Multiple Store Locations <br>
 - Easy to work with Config <br>
  
