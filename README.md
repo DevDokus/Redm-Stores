@@ -1,5 +1,12 @@
 # RedM-Stores (WIP) (v1.0.0)
  Customizable Stores for RedM
+
+# Discord
+If you need any information about my script,<br>
+if you found a bug, if you have an idea for the <br>
+next version, or if you simply need some help.<br>
+Feel free to join our [Discord](http://discord.gg/2gdypBhsye)
+
 # Requirements (Optional)
 [DevDokus RedM UsableItems](https://github.com/DevDokus/RedM-UsableItems) <br>
 If you want to make your items be usable. <br>
