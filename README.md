@@ -1,4 +1,4 @@
-# RedM-Stores (WIP) (v1.0.0)
+# RedM-Stores (WIP) (v1.1.0)
  Customizable Stores for RedM
 
 # Discord
@@ -14,16 +14,16 @@ With this plugin you can also set the mount of <br>
 hunger, thirst, stamina and health you get per item.
 
 # Framework
-Currently this script only works with VORP. <br> 
-In the near future this script will also be <br> 
-compatible with RedEmRP. 
+Currently this script only works with VORP. <br>
+In the near future this script will also be <br>
+compatible with RedEmRP.
 
 # Features
 - Buying items from 3 categories (Food - Meds - Misc) <br>
 - Selling items from 3 categories (Food - Meds - Misc) <br>
 - Multiple Store Locations <br>
 - Easy to work with Config <br>
- 
+
 # Disclaimer
 Although the basics of this plugin are finished, <br>
 i am still working on expanding it in the coming <br>

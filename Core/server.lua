@@ -2,7 +2,7 @@
 ----------------------------------- DevDokus -----------------------------------
 --------------------------------------------------------------------------------
 local VorpCore = {}
-TriggerEvent("getCore",function(core) VorpCore = core end)
+TriggerEvent("getCore", function(core) VorpCore = core end)
 VorpInv = exports.vorp_inventory:vorp_inventoryApi()
 --------------------------------------------------------------------------------
 RegisterServerEvent('DevDokus:S:BuyItem')
@@ -31,9 +31,9 @@ end)
 AddEventHandler('DevDokus:S:SellItem', function(Data)
   local User = VorpCore.getUser(source)
   if User ~= nil then
-    local Char  = User.getUsedCharacter
+    local Char = User.getUsedCharacter
     local money = Char.money
-    local item  = VorpInv.getItemCount(source, Data.ID)
+    local item = VorpInv.getItemCount(source, Data.ID)
 
     if (item > 0) then
       Char.addCurrency(0, Data.Price)
