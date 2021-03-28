@@ -18,11 +18,11 @@ AddEventHandler('DevDokus:S:BuyItem', function(Data)
 
     if (balance < max) then
       if (money <= Data.Price) then
-        Notify('Not Enough Money', 100)
+        Notify(_('NotEnoughMoney'), 100)
       else
         Char.removeCurrency(0, Data.Price)
         VorpInv.addItem(source, Data.ID, 1)
-        Notify('You\'ve bought a ' .. Data.Name .. ', costing you $' .. Data.Price .. ' Dollar!', 5000)
+        Notify(_('Bought1') .. Data.Name .. _('Bought2') .. Data.Price .. _U('Bought3'), 5000)
       end
     end
   end
@@ -38,9 +38,9 @@ AddEventHandler('DevDokus:S:SellItem', function(Data)
     if (item > 0) then
       Char.addCurrency(0, Data.Price)
       VorpInv.subItem(source, Data.ID, 1)
-      Notify('You\'ve sold an item: '..Data.Name, 5000)
+      Notify(_('Sold')..Data.Name, 5000)
     else
-      Notify('You\'ve no item called: '..Data.Name, 5000)
+      Notify(_('NoItem')..Data.Name, 5000)
     end
   end
 end)

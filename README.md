@@ -1,4 +1,4 @@
-# RedM-Stores (WIP) (v1.1.0)
+# RedM-Stores (WIP) (v1.2.0)
  Customizable Stores for RedM
 
 # Discord

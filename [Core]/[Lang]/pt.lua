@@ -1,0 +1,22 @@
+Lang['pt'] = {
+   ['OpenShop'] = 'Pressione [~e~ ESPAÇO ~q~] para abrir o menu da loja',
+   ['MenuTitle'] = 'Loja Geral',
+   ['Category'] = 'Categoria',
+   ['Buy'] = 'Comprar itens',
+   ['Sell'] = 'Vender Itens',
+   ['Food'] = 'Comida',
+   ['Meds'] = 'Médico',
+   ['Misc'] = 'Diversos',
+   ['FoodMenu'] = 'Menu de comida',
+   ['MedsMenu'] = 'Itens Médicos',
+   ['MiscMenu'] = 'Outros itens',
+   ['FoodSubTitle'] = 'Suas necessidades básicas diárias',
+   ['MedsSubTitle'] = 'Para permanecer vivo!',
+   ['OtherItems'] = 'Outros itens',
+   ['NotEnoughMoney'] = 'Sem dinheiro suficiente',
+   ['Bought1'] = "Você comprou um",
+   ['Bought2'] = ', custando $',
+   ['Bought3'] = 'Dólar!',
+   ['Sold'] = "Você vendeu um item:",
+   ['NoItem'] = "Você não tem nenhum item chamado:"
+}

@@ -1,10 +1,17 @@
+--------------------------------------------------------------------------------
+----------------------------------- DevDokus -----------------------------------
+--------------------------------------------------------------------------------
+Language = 'en'  -- Languages: en - es - ru - pt - fr - de - it
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 Stores = {
   {Store = 'Valentine', Coords = {x = -321.89, y = 803.99, z = 117.88}},
   {Store = 'Saint Denis', Coords = {x = 2825.74, y = -1317.91, z = 46.76}},
   {Store = 'Blackwater', Coords = {x = -784.50, y = -1324.07, z = 43.88}},
   {Store = 'Tumbleweed', Coords = {x = -5487.4, y = -2935.80, z = -0.40}}
 }
-
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 -- These are the items that will appear in the buy section of the menu.
 -- Be aware, items you buy need to be in the database as vorp wants it.
 -- Items that can not be used can be added via my plugin DevDokus--UsableItems
@@ -20,7 +27,8 @@ Buy = {
   {ID = 'weapon_fishingrod', Type = 'Misc', Name = 'Fishing Rod', Price = 15.0, Max = 1, Text = 'There\'s no fishing without'},
   {ID = 'bait', Type = 'Misc', Name = 'Fishing Bait', Price = 1.25, Max = 10, Text = 'Fish need to eat something you know!'},
 }
-
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 -- These are the items that will appear in the sell section of the menu.
 -- Any item can be added to the list and it does not need to be in the database.
 -- As long the items is on the list by its item name id, it will work.
@@ -39,7 +47,8 @@ Sell = {
   {ID = 'wooden_boards', Type = 'Misc', Name = 'Wooden Board', Price = 0.75, Text = 'Fresh Smelling Wooden Board'},
 }
 
-
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 Keys = {
   -- Mouse buttons
   ["MOUSE1"] = 0x07CE1E61, ["MOUSE2"] = 0xF84FA74F, ["MOUSE3"] = 0xCEE12B50, ["MWUP"] = 0x3076E97C,
@@ -56,3 +65,5 @@ Keys = {
   ["4"] = 0x8F9F9E58, ["5"] = 0xAB62E997, ["6"] = 0xA1FDE2A6, ["7"] = 0xB03A913B, ["8"] = 0x42385422,
   ["DOWN"] = 0x05CA7C52, ["UP"] = 0x6319DB71, ["LEFT"] = 0xA65EBAB4, ["RIGHT"] = 0xDEB34313,
 }
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------

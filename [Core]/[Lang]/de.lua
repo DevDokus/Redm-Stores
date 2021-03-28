@@ -1,0 +1,22 @@
+Lang['de'] = {
+  ['OpenShop'] = 'Drücken Sie [~e~ SPACE ~q~], um das Shop-Menü zu öffnen',
+  ['MenuTitle'] = 'Gemischtwarenladen',
+  ['Category'] = 'Kategorie',
+  ['Buy'] = 'Artikel kaufen',
+  ['Sell'] = 'Artikel verkaufen',
+  ['Food'] = 'Essen',
+  ['Meds'] = 'Medical',
+  ['Misc'] = 'Verschiedenes',
+  ['FoodMenu'] = 'Speisekarte',
+  ['MedsMenu'] = 'Medizinische Gegenstände',
+  ['MiscMenu'] = 'Andere Gegenstände',
+  ['FoodSubTitle'] = 'Ihre täglichen Grundbedürfnisse',
+  ['MedsSubTitle'] = 'Um am Leben zu bleiben!',
+  ['OtherItems'] = 'Andere Gegenstände',
+  ['NotEnoughMoney'] = 'Nicht genug Geld',
+  ['Bought1'] = "Du hast ein gekauft",
+  ['Bought2'] = ', kostet dich $',
+  ['Bought3'] = 'Dollar!',
+  ['Sold'] = "Sie haben einen Artikel verkauft:",
+  ['NoItem'] = "Sie haben kein Element mit dem Namen:"
+}

@@ -8,19 +8,8 @@ games {"rdr3"}
 
 description 'Customizable General Stores for RedM'
 author 'DevDokus Github'
-version '1.1.0'
+version '1.2.0'
 
-client_scripts {
-    'Lib/warmenu.lua',
-    'Core/functions.lua',
-    'Core/client.lua',
-    'config.lua'
-}
-
-shared_script 'config.lua'
-
-server_scripts {
-    'config.lua',
-    'Core/functions.lua',
-    'Core/server.lua',
-}
+shared_script {'config.lua', '[Core]/[Lang]/*.lua'}
+client_scripts { '[Core]/*.lua', '[Core]/[Client]/*.lua' }
+server_scripts { '[Core]/*.lua', '[Core]/[Server]/*.lua' }

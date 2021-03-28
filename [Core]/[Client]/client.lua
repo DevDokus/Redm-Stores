@@ -33,7 +33,7 @@ for k, v in pairs(Stores) do
   if (dist <= 8) then
     if not MenuOpen then DrawCircle(x, y, z, 204, 56, 209, 50) end
     if (dist <= 1.5) then
-      if not MenuOpen then DrawInfo('Press [ ~e~SPACE~q~ ] to open the shop menu', 0.5, 0.95, 0.75) end
+      if not MenuOpen then DrawInfo(_('OpenShop'), 0.5, 0.95, 0.75) end
       if IsControlJustPressed(0, Keys["SPACEBAR"]) then
         MenuOpen = true
         ActiveMenu = 'Home'
@@ -78,28 +78,28 @@ end)
 
 
 function CreateMenus()
-WarMenu.CreateMenu('Home', 'General Store')
+WarMenu.CreateMenu('Home', _('MenuTitle'))
 WarMenu.SetSubTitle('Home', 'Made By DevDokus')
 
 -- Buy Menu
-WarMenu.CreateMenu('BuyMenu', 'General Store')
-WarMenu.SetSubTitle('BuyMenu', 'Choose Category')
-WarMenu.CreateMenu('bFoodCat', 'General Store')
-WarMenu.SetSubTitle('bFoodCat', 'Ah, hungry I see?')
-WarMenu.CreateMenu('bMiscCat', 'General Store')
-WarMenu.SetSubTitle('bMiscCat', 'Other items')
-WarMenu.CreateMenu('bMedsCat', 'General Store')
-WarMenu.SetSubTitle('bMedsCat', 'Medical Items')
+WarMenu.CreateMenu('BuyMenu', _('MenuTitle'))
+WarMenu.SetSubTitle('BuyMenu', _('Category'))
+WarMenu.CreateMenu('bFoodCat', _('MenuTitle'))
+WarMenu.SetSubTitle('bFoodCat', _('FoodMenu'))
+WarMenu.CreateMenu('bMiscCat', _('MenuTitle'))
+WarMenu.SetSubTitle('bMiscCat', _('MiscMenu'))
+WarMenu.CreateMenu('bMedsCat', _('MenuTitle'))
+WarMenu.SetSubTitle('bMedsCat', _('MedsMenu'))
 
 --- Sell Menu
-WarMenu.CreateMenu('SellMenu', 'General Store')
-WarMenu.SetSubTitle('SellMenu', 'Choose Category')
-WarMenu.CreateMenu('sFoodCat', 'General Store')
-WarMenu.SetSubTitle('sFoodCat', 'Ah, hungry I see?')
-WarMenu.CreateMenu('sMiscCat', 'General Store')
-WarMenu.SetSubTitle('sMiscCat', 'Other items')
-WarMenu.CreateMenu('sMedsCat', 'General Store')
-WarMenu.SetSubTitle('sMedsCat', 'Medical Items')
+WarMenu.CreateMenu('SellMenu', _('MenuTitle'))
+WarMenu.SetSubTitle('SellMenu', _('Category'))
+WarMenu.CreateMenu('sFoodCat', _('MenuTitle'))
+WarMenu.SetSubTitle('sFoodCat', _('FoodMenu'))
+WarMenu.CreateMenu('sMiscCat', _('MenuTitle'))
+WarMenu.SetSubTitle('sMiscCat', _('MiscMenu'))
+WarMenu.CreateMenu('sMedsCat', _('MenuTitle'))
+WarMenu.SetSubTitle('sMedsCat', _('MedsMenu'))
 end
 
 --------------------------------------------------------------------------------
@@ -107,8 +107,8 @@ end
 --------------------------------------------------------------------------------
 function Home ()
 ActiveMenu = 'Home'
-local BBuy = WarMenu.Button('Buy Items', '', 'Github.com/DevDokus')
-local BSell = WarMenu.Button('Sell Items', '', 'WORK IN PROGRESS')
+local BBuy = WarMenu.Button(_('Buy'), '', 'Github.com/DevDokus')
+local BSell = WarMenu.Button(_('Sell'), '', 'WORK IN PROGRESS')
 if BBuy then WarMenu.OpenMenu('BuyMenu') end
 if BSell then WarMenu.OpenMenu('SellMenu') end
 WarMenu.Display()
@@ -119,9 +119,9 @@ end
 --------------------------------------------------------------------------------
 function BuyMenu ()
 ActiveMenu = 'BuyMenu'
-local _Foods = WarMenu.Button('Foods', '', 'Your daily basic needs')
-local _Meds = WarMenu.Button('Medical', '', 'For staying alive!')
-local _Misc = WarMenu.Button('Misc', '', 'Other Items')
+local _Foods = WarMenu.Button(_('Food'), '', _('FoodMenu'))
+local _Meds = WarMenu.Button(_('Meds'), '', _('MedsMenu'))
+local _Misc = WarMenu.Button(_('Misc'), '', _('MiscMenu'))
 if _Foods then WarMenu.OpenMenu('bFoodCat') end
 if _Meds then WarMenu.OpenMenu('bMedsCat') end
 if _Misc then WarMenu.OpenMenu('bMiscCat') end
@@ -130,9 +130,9 @@ end
 
 function SellMenu ()
 ActiveMenu = 'SellMenu'
-local _Foods = WarMenu.Button('Foods', '', 'Your daily basic needs')
-local _Meds = WarMenu.Button('Medical', '', 'For staying alive!')
-local _Misc = WarMenu.Button('Misc', '', 'Other Items')
+local _Foods = WarMenu.Button(_('Food'), '', _('FoodMenu'))
+local _Meds = WarMenu.Button(_('Meds'), '', _('MedsMenu'))
+local _Misc = WarMenu.Button(_('Misc'), '', _('MiscMenu'))
 if _Foods then WarMenu.OpenMenu('sFoodCat') end
 if _Meds then WarMenu.OpenMenu('sMedsCat') end
 if _Misc then WarMenu.OpenMenu('sMiscCat') end

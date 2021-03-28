@@ -1,0 +1,22 @@
+Lang['en'] = {
+  ['OpenShop'] = 'Press [~e~ SPACE ~q~] to open the shop menu',
+  ['MenuTitle'] = 'General Store',
+  ['Category'] = 'Category',
+  ['Buy'] = 'Buy Items',
+  ['Sell'] = 'Sell Items',
+  ['Food'] = 'Food',
+  ['Meds'] = 'Medical',
+  ['Misc'] = 'Miscellaneous',
+  ['FoodMenu'] = 'Food Menu',
+  ['MedsMenu'] = 'Medical Items',
+  ['MiscMenu'] = 'Other Items',
+  ['FoodSubTitle'] = 'Your daily basic needs',
+  ['MedsSubTitle'] = 'For staying alive!',
+  ['OtherItems'] = 'Other Items',
+  ['NotEnoughMoney'] = 'Not Enough Money',
+  ['Bought1'] = "You've bought a ",
+  ['Bought2'] = ', costing you $',
+  ['Bought3'] = ' Dollar!',
+  ['Sold'] = "You've sold an item: ",
+  ['NoItem'] = "You've no item called: "
+}
