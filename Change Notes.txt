@@ -5,17 +5,7 @@
 --------------------------------------------------------------------------------
 -------------------------------- Version 1.2.0 ---------------------------------
 --------------------------------------------------------------------------------
-[1]: Added language support for the following languages.
+[2]: Added language support for the following languages.
      - German - Spanish - Portuguese - Russian - French - Italian
 
-[2]: Changed file and folder structure. Important to delete the old stores 
-     plugin before installing v 1.2.0
-
---------------------------------------------------------------------------------
--------------------------------- Version 1.1.0 ---------------------------------
---------------------------------------------------------------------------------
-[1]: Changed the text look for opening the menu. Also put in some red colors.
-[2]: Added item in the selling list {wooden_boards}, something that is used
-     in the Vorp Woodcutters job.
---------------------------------------------------------------------------------
 --------------------------------------------------------------------------------

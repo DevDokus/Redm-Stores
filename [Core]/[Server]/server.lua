@@ -22,7 +22,7 @@ AddEventHandler('DevDokus:S:BuyItem', function(Data)
       else
         Char.removeCurrency(0, Data.Price)
         VorpInv.addItem(source, Data.ID, 1)
-        Notify(_('Bought1') .. Data.Name .. _('Bought2') .. Data.Price .. _U('Bought3'), 5000)
+        Notify(_('Bought1') .. Data.Name .. _('Bought2') .. Data.Price .. _('Bought3'), 5000)
       end
     end
   end
